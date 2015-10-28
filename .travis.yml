@@ -5,3 +5,9 @@ jdk:
 install: mvn clean install -Pcloudnativejava
 script: mvn deploy -Pcloudnativejava
 
+cache:
+  directories:
+    - $HOME/.m2/repository/
+
+
+
