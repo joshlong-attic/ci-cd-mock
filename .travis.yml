@@ -4,4 +4,4 @@ jdk:
 
 script: mvn clean deploy -Pcloudnativejava
 
-install: false
+install: /bin/true
