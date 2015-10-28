@@ -77,7 +77,7 @@
                             <buildInfo>
                                 <agentName>Travis CI</agentName>
                                 <buildNumber>{{TRAVIS_BUILD_NUMBER}}</buildNumber>
-                                <buildUrl>http://travis-ci.org/{{TRAVIS_REPO_SLUG}}/builds/{{TRAVIS_JOB_ID}}</buildUrl>
+                                <buildUrl>http://travis-ci.org/{{TRAVIS_REPO_SLUG}}/builds/{{TRAVIS_BUILD_ID}}</buildUrl>
                                 <principal>{{USER}}</principal>
                             </buildInfo>
                         </configuration>
