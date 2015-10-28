@@ -3,7 +3,7 @@ jdk:
 - oraclejdk8
 
 install: mvn clean install -Pcloudnativejava
-script: mvn deploy -Pcloudnativejava
+script: mvn -DskipTests=true deploy -Pcloudnativejava
 
 cache:
   directories:
