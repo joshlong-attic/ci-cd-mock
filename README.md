@@ -24,3 +24,9 @@ Here's what `distributionManagement` _would_ look like if we weren't using the p
 if you decide to use this same build with multiple CI servers (Travis && Drone.io && Circle CI!), ull need to be able to rely on the various encironment variables when feeding the plugin in pom.xml. JFrog plugin supports piping variables, a la https://www.jfrog.com/confluence/display/RTF/Maven+Artifactory+Plugin
 
 for travis CI, check out http://docs.travis-ci.com/user/languages/java/
+
+We can then fetch the build from Artifactory by its VCS commit ID:
+https://cloudnativejava.artifactoryonline.com/cloudnativejava/libs-snapshot-local/com/example/ci-cd/0.0.1-SNAPSHOT/ci-cd-0.0.1-SNAPSHOT.jar;build.vcsRevision+=4cfc5f409f2013ac90c26829e1251ba2a0ae80bc?trace
+
+THIS is what you could deploy to CF!
+
