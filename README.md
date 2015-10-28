@@ -28,5 +28,34 @@ for travis CI, check out http://docs.travis-ci.com/user/languages/java/
 We can then fetch the build from Artifactory by its VCS commit ID:
 https://cloudnativejava.artifactoryonline.com/cloudnativejava/libs-snapshot-local/com/example/ci-cd/0.0.1-SNAPSHOT/ci-cd-0.0.1-SNAPSHOT.jar;build.vcsRevision+=4cfc5f409f2013ac90c26829e1251ba2a0ae80bc?trace
 
-THIS is what you could deploy to CF!
+THIS is what you could deploy to CF! Notice the query at the end after the semicolon. The ID referenced is the `$COMMIT_ID`. You can `wget` that dependency and then `cf push -p it.jar`
+
+Now we've got this in a staging server and somebody clicks around and it's awesome! Now, to signal that it should be releaseed.
+
+THE BIG GREEN BUTTON!!
+
+PUT /api/storage/libs-release-local/ch/qos/logback/logback-classic/0.9.9?properties=os=win,linux|qa=done&recursive=1
+
+
+https://cloudnativejava.artifactoryonline.com/cloudnativejava/api/search/prop?build.vcsRevision=4cfc5f409f2013ac90c26829e1251ba2a0ae80bc
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

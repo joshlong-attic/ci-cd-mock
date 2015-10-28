@@ -1,0 +1,7 @@
+items.find(
+    {
+
+       "name": {"$match":"*.jar"},
+       "@build.vcsRevision":"4cfc5f409f2013ac90c26829e1251ba2a0ae80bc"
+    }
+)
