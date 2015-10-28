@@ -2,6 +2,6 @@ language: java
 jdk:
 - openjdk8
 
-script: mvn clean deploy -Pcloudnativejava
+install: mvn clean install -Pcloudnativejava
+script: mvn deploy -Pcloudnativejava
 
-install: /bin/true
