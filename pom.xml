@@ -62,7 +62,7 @@
                         </goals>
                         <configuration>
                             <deployProperties>
-                                <vcsRevision>{{TRAVIS_COMMIT}}</vcsRevision>
+                                <build.vcsRevision>{{TRAVIS_COMMIT}}</build.vcsRevision>
                             </deployProperties>
                             <!--
                                                         <deployProperties>
