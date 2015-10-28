@@ -61,6 +61,9 @@
                             <goal>publish</goal>
                         </goals>
                         <configuration>
+                            <deployProperties>
+                                <vcsRevision>{{TRAVIS_COMMIT}}</vcsRevision>
+                            </deployProperties>
                             <!--
                                                         <deployProperties>
                                                             <gradle>awesome</gradle>
@@ -80,6 +83,7 @@
                                 <buildUrl>http://travis-ci.org/{{TRAVIS_REPO_SLUG}}/builds/{{TRAVIS_BUILD_ID}}</buildUrl>
                                 <principal>{{USER}}</principal>
                                 <vcsRevision>{{TRAVIS_COMMIT}}</vcsRevision>
+
                             </buildInfo>
                         </configuration>
                     </execution>
