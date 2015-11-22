@@ -8,6 +8,3 @@ script: mvn -DskipTests=true deploy -Pcloudnativejava
 cache:
   directories:
     - $HOME/.m2/repository/
-
-
-

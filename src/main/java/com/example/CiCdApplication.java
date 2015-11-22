@@ -19,8 +19,8 @@ public class CiCdApplication {
 
 @RestController
 class GreetingsRestController {
-    @RequestMapping(
 
+    @RequestMapping(
             produces = MediaType.APPLICATION_JSON_VALUE,
             consumes = MediaType.APPLICATION_JSON_VALUE,
             value = "/hi")
